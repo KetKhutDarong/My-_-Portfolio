@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+     <!-- boxicons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+      <!-- Added hamburger menu button for mobile -->
+    <button class="hamburger-menu" id="hamburgerMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Added overlay for mobile menu -->
+    <!-- <div class="menu-overlay" id="menuOverlay"></div> -->
+
+    <main class="main-container">
+      <!-- Added mobile-menu class and close button to sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <button class="close-menu" id="closeMenu">
+          <i class="ri-close-line"></i>
+        </button>
+        <div class="container">
+          <div class="pic">
+            <img src="4x6 (2).jpg" alt="Profile Picture" />
+          </div>
+          <h1 class="name">Ketkhut Darong</h1>
+          <p class="major"><span>Software Developer</span> in Cambodia</p>
+          <ul class="menu">
+            <li><a href="#home" onclick="closeMenuOnClick()">Home</a></li>
+            <li><a href="#about-header" onclick="closeMenuOnClick()">About</a></li>
+            <li><a href="#service-header" onclick="closeMenuOnClick()">Service</a></li>
+            <li><a href="#skills" onclick="closeMenuOnClick()">Skills</a></li>
+            <li><a href="#education" onclick="closeMenuOnClick()">Education</a></li>
+            <li><a href="#experience" onclick="closeMenuOnClick()">Experience</a></li>
+            <li><a href="#contact" onclick="closeMenuOnClick()">Contact</a></li>
+          </ul>
+        </div>
+      </aside>
+      
+      <article class="right-side">
+        <section class="Homepage" id="home">
+          <div class="text-homepage">
+            <h1>I am a</h1>
+            <h1><span>Software Developer</span></h1>
+            <p>Turning coffee into code ☕💻</p>
+            <p>Building modern, responsive websites 🚀</p>
+          <div class="cv"  data-aos="fade-up" data-aos-duration="1300" data-aos-delay="2000">
+            <a href="Curriculum Vitae1.pdf" download="Curriculum Vitae1.pdf" class="btn-outline">
+               DOWNLOAD CV <i class="ri-download-line"></i>
+            </a>
+          </div>
+
+
+          </div>
+          <!-- Put this where you want the download button/link -->
+
+          <div class="photo" data-aos="zoom-in" data-aos-duration="2000">
+            <img
+              src="photo_2025-08-31_01-01-58-removebg-preview.png"
+              alt="My Profile"
+            />
+          </div>
+        </section>
+        <section class="about-header" id="about-header">
+          <div class="about">
+            <div class="about-text" >
+              <p class="p1" data-aos="fade-right" data-aos-duration="1400" data-aos-delay="250">About US</p>
+              <h1 data-aos="fade-up" data-aos-duration="1400" data-aos-delay="300">Who am i?</h1>
+              <p class="p2" data-aos="fade-left" data-aos-duration="1400" data-aos-delay="400">
+                <span>Hi, I'm Darong</span> a passionate developer who enjoys
+                turning ideas into real-world solutions through code. With a
+                growing skill set in web development, software design, and
+                application building, I focus on writing clean, efficient, and
+                user-friendly solutions.
+              </p>
+              <p class="p4" data-aos="fade-right" data-aos-duration="1400" data-aos-delay="500">
+                What excites me most is solving problems, building intuitive
+                designs, and continuously learning new technologies that push me
+                to become a better developer.
+              </p>
+            </div>
+            <div class="about-service">
+              <div class="box" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="100">
+                <div class="icon" >
+                  <i class="ri-quill-pen-ai-line"></i>
+                </div>
+                <h3>Graphic Design</h3>
+              </div>
+              <div class="box"   data-aos="fade-down" data-aos-duration="1300" data-aos-delay="250">
+                <div class="icon">
+                  <i class="ri-macbook-line"></i>
+                </div>
+                <h3>Web Design</h3>
+              </div>
+              <div class="box"  data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200">
+                <div class="icon">
+                  <i class="ri-database-2-line"></i>
+                </div>
+                <h3>SoftWare</h3>
+              </div>
+              <div class="box" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="250">
+                <div class="icon">
+                  <i class="ri-smartphone-line"></i>
+                </div>
+                <h3>Application</h3>
+              </div>
+            </div>
+            <div class="sucess-project" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="300">
+              <div class="text-pro">
+                <p>I am happy to know you</p>
+                <p>that 30+ projects done sucessfully!</p>
+              </div>
+              <button class="btn"><a href="">Hire me</a></button>
+            </div>
+          </div>
+        </section>
+        <section class="service-header" id="service-header">
+          <div class="service">
+            <div class="service-text" data-aos="fade-right" data-aos-duration="1300" data-aos-delay="300">
+              <p>What I do?</p>
+              <p>Here are some of my</p>
+              <p>expertise</p>
+            </div>
+            <div class="card-header">
+              <div class="service-card"  data-aos="fade-up" data-aos-duration="1400" data-aos-delay="400">
+                <div class="hexagon">
+                  <i class="ri-lightbulb-line"></i>
+                </div>
+                <h3>Innovative Ideas</h3>
+                <p>
+                  Continuously exploring creative approaches to solve problems
+                  and deliver unique solutions.
+                </p>
+              </div>
+              <div class="service-card grap"  data-aos="fade-up" data-aos-duration="1400" data-aos-delay="600">
+                <div class="hexagon">
+                  <i class="ri-quill-pen-ai-line"></i>
+                </div>
+                <h3>Graphic Design</h3>
+                <p>
+                  Crafting visually appealing designs that enhance user
+                  experience and brand identity.
+                </p>
+              </div>
+              <div class="service-card de"  data-aos="fade-up" data-aos-duration="1400" data-aos-delay="800">
+                <div class="hexagon">
+                  <i class="ri-database-2-line"></i>
+                </div>
+                <h3>Web Design</h3>
+                <p>
+                  Designing responsive, modern, and interactive websites that
+                  provide seamless user experiences.
+                </p>
+              </div>
+              <div class="service-card"  data-aos="fade-up" data-aos-duration="1400" data-aos-delay="1000">
+                <div class="hexagon">
+                  <i class="ri-book-open-line"></i>
+                </div>
+                <h3>Learning & Research</h3>
+                <p>
+                  Exploring new technologies, frameworks, and programming concepts to continuously expand knowledge.
+                </p>
+              </div>
+              <div class="service-card"  data-aos="fade-up" data-aos-duration="1400" data-aos-delay="1200">
+                <div class="hexagon">
+                  <i class="ri-settings-2-line"></i>
+                </div>
+                <h3>Mini Projects & Experiments</h3>
+                <p>
+                uilding small apps and creative projects to practice skills and problem-solving.
+                </p>
+              </div>
+              <div class="service-card"  data-aos="fade-up" data-aos-duration="1400" data-aos-delay="1400">
+                <div class="hexagon">
+                  <i class="ri-bard-line"></i>
+                </div>
+                <h3>Machine Learning</h3>
+                <p>
+                  Building intelligent systems for automation, predictions, and
+                  data-driven decision-making.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <section class="client">
+          <div class="num">
+            <h1>399</h1>
+            <h1>199</h1>
+            <h1>35</h1>
+            <h1>5</h1>
+          </div>
+          <div class="text-c">
+            <h2>Cups of coffee</h2>
+            <h2>Projects</h2>
+            <h2>Clients</h2>
+            <h2>Partners</h2>
+          </div>
+        </section> -->
+        <section class="skills-header" id="skills">
+          <div class="skills-text">
+            <p  data-aos="fade-right" data-aos-delay="900">My Specialty</p >
+            <h1 data-aos="fade-left" data-aos-delay="700">My Skills</h1 >
+            <p  data-aos="fade-up" data-aos-delay="700">
+              I have strong knowledge of HTML5, CSS3, and JavaScript for
+              building responsive and interactive websites. With Java and
+              Python, I can develop applications and solve real-world problems
+              using object-oriented and data-driven approaches. I also bring
+              creativity through Photoshop, designing modern visuals and UI
+              elements that enhance user experience.
+            </p>
+          </div>
+          <div class="skills-container">
+            <div class="skill" data-aos="fade-right" data-aos-delay="700">
+              <div class="skill-info">
+          <span>Photoshop</span>
+          <span class="percent">75%</span>
+              </div>
+              <div class="progress-bar">
+          <div class="progress blue" style="width: 75%"></div>
+              </div>
+            </div>
+
+            <div class="skill" data-aos="fade-left" data-aos-delay="700">
+              <div class="skill-info" >
+          <span>HTML5</span>
+          <span class="percent">85%</span>
+              </div>
+              <div class="progress-bar">
+          <div class="progress orange" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="skill" data-aos="fade-right" data-aos-delay="800">
+              <div class="skill-info">
+          <span>CSS</span>
+          <span class="percent">70%</span>
+              </div>
+              <div class="progress-bar">
+          <div class="progress teal" style="width: 70%"></div>
+              </div>
+            </div>
+
+            <div class="skill " data-aos="fade-left" data-aos-delay="800">
+              <div class="skill-info">
+          <span>JavaScript</span>
+          <span class="percent">20%</span>
+              </div>
+              <div class="progress-bar">
+          <div class="progress red" style="width: 20%"></div>
+              </div>
+            </div>
+
+            <div class="skill" id="h"  data-aos="fade-right" data-aos-delay="900">
+              <div class="skill-info">
+          <span>Python</span>
+          <span class="percent">90%</span>
+              </div>
+              <div class="progress-bar">
+          <div class="progress purple" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="skill" id="h" data-aos="fade-left" data-aos-delay="900">
+              <div class="skill-info">
+          <span>Java</span>
+          <span class="percent">80%</span>
+              </div>
+          <div class="progress-bar">
+          <div class="progress darkblue" style="width: 80%"></div>
+          </div>
+            </div>
+          </div>
+        </section>
+        <section class="education-header" id="education">
+          <div class="education">
+            <div class="about-text">
+              <p class="p1" data-aos="fade-right" data-aos-duration="1400" data-aos-delay="700">About US</p>
+              <h1 data-aos="fade-up" data-aos-duration="1400" data-aos-delay="700">Who am i?</h1>
+            </div>
+            <div class="box-edu" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="800">
+              <p class="box-p">
+                bachelor degree software development at norton university
+              </p>
+            </div>
+            <div class="box-edu" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="850">
+              <p class="box-p">
+                Work-Study Program at Digital Divide Data Cambodia(DDD).
+              </p>
+            </div>
+            <div class="box-edu" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="900">
+              <p class="box-p">
+                Basic Programing language(c#, C++) at ETEC center.
+              </p>
+            </div>
+            <div class="box-edu" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="950">
+              <p class="box-p">
+                English Speaking, English translation, English listening at
+                Skill training center.
+              </p>
+            </div>
+            <div class="box-edu" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="1000">
+              <p class="box-p">
+                Short Full-Stack Development course with Club-code.
+              </p>
+            </div>
+            <div class="box-edu" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="1050">
+              <p class="box-p">
+                Short Web Design course with teacher Heng Menghoy.
+              </p>
+            </div>
+            <div class="box-edu" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="1100">
+              <p class="box-p">
+                Graduated from Svay Rieng High School in 2023, with a
+                Certificate grade of "B."
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="experience-header" id="experience">
+          <div class="about-text">
+            <p class="p1"  data-aos="fade-right" data-aos-duration="1400" data-aos-delay="700">Experience</p>
+            <h1 data-aos="fade-left" data-aos-delay="700">Work Experience</h1>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item"  data-aos="fade-right"  data-aos-delay="700">
+              <div class="timeline-content">
+                <h3>Customer Service <span>2024-2025</span></h3>
+                <p>
+                  Customer service in doctor care is about combining medical
+                  treatment with compassion, respect, and clear communication to
+                  make patients feel valued and supported.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-left" data-aos-duration="1400" data-aos-delay="800">
+              <div class="timeline-content">
+                <h3>Stock Controller <span>2024-2025</span></h3>
+                <p>
+                  A stock controller at the Cambodia Book Fair manages books and
+                  materials, tracks inventory, ensures stock availability, and
+                  supports smooth operations so visitors and exhibitors have
+                  what they need.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item"  data-aos="fade-right" data-aos-duration="1400" data-aos-delay="900">
+              <div class="timeline-content">
+                <h3>Machine Learning <span>2024-2025</span></h3>
+                <p>
+                  Machine Learning with DDD applies machine learning techniques
+                  within Digital Divide Data Cambodia to create intelligent,
+                  organized, and efficient software solutions tailored to
+                  specific business domains.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-left" data-aos-duration="1400" data-aos-delay="1000">
+              <div class="timeline-content">
+                <h3>Volunteer Coordinator <span>2023-2024</span></h3>
+                <p>
+                  Organizes and manages volunteers, assigns tasks, ensures
+                  events run smoothly, and provides support and guidance to
+                  maximize volunteer effectiveness.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact-header" id="contact">
+          <div class="about-text">
+            <p class="p1"  data-aos="fade-right" data-aos-duration="1400" data-aos-delay="650">Get in Touch</p>
+            <h1 data-aos="fade-up" data-aos-duration="1400" data-aos-delay="700">Contact</h1>
+          </div>
+          <!-- HTML -->
+          <div class="contact">
+            <div class="contact-box1" >
+              <div class="contact-item"  data-aos="fade-right" data-aos-duration="1400" data-aos-delay="800">  
+                <div class="icons"><i class="ri-mail-line"></i></div>
+                <a href="mailto:ketkhutdarong@gmail.com"
+                  >ketkhutdarong@gmail.com</a
+                >
+              </div>
+
+              <div class="contact-item"  data-aos="fade-right" data-aos-duration="1400" data-aos-delay="800">
+                <div class="icons"><i class="ri-map-2-line"></i></div>
+                <p>House No.123, Street456, Boeung Keng Kang I, Phnom Penh.</p>
+              </div>
+
+              <div class="contact-item"  data-aos="fade-right" data-aos-duration="1400" data-aos-delay="900">
+                <div class="icons"><i class="ri-phone-line"></i></div>
+                <p>+885 977769912</p>
+              </div>
+            </div>
+            <div class="contact-box2" data-aos="fade-left" data-aos-duration="1400" data-aos-delay="800">
+              <form class="contact-form">
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Email" required />
+                <input type="text" placeholder="Subject" required />
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">SEND MESSAGE</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+  </body>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Added JavaScript for hamburger menu functionality -->
+    <script>
+      // Hamburger menu functionality
+      const hamburgerMenu = document.getElementById('hamburgerMenu');
+      const sidebar = document.getElementById('sidebar');
+      const closeMenu = document.getElementById('closeMenu');
+      const menuOverlay = document.getElementById('menuOverlay');
+
+      function openMenu() {
+        sidebar.classList.add('active');
+        menuOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeMenuFunc() {
+        sidebar.classList.remove('active');
+        menuOverlay.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+
+      function closeMenuOnClick() {
+        if (window.innerWidth <= 768) {
+          closeMenuFunc();
+        }
+      }
+
+      hamburgerMenu.addEventListener('click', openMenu);
+      closeMenu.addEventListener('click', closeMenuFunc);
+      menuOverlay.addEventListener('click', closeMenuFunc);
+
+      // Close menu when clicking on menu items on mobile
+      document.querySelectorAll('.menu a').forEach(link => {
+        link.addEventListener('click', closeMenuOnClick);
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 1,
+        duration: 1000,
+        once: true,
+      });
+    </script>
+</body>
+
+  </script>
+</html>
